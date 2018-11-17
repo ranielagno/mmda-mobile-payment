@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MMDA Mobile Payment</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_license">License Number</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="register">Register</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_navigation_drawer">MMDA Mobile Payment</string>
+
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Profile</string>
+    <string name="title_section3">Payment History</string>
+    <string name="title_section4">Logout</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="violation">Violation:</string>
+    <string name="penalty_fee">Penalty Fee:</string>
+    <string name="date_of_violation">Date of Violation:</string>
+    <string name="transaction_number">Transaction Number:</string>
+    <string name="date_of_payment">Date of Payment:</string>
+
+</resources>

@@ -1,0 +1,168 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/light_blue"
+    tools:context="mmda.mmdamobilepayment.register.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:textSize="35dp"
+            android:textColor="@color/colorWhite"
+            android:text="Sign Up"
+            android:background="@color/colorPrimaryDark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <EditText
+                android:id="@+id/licenseNumber"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:background="@color/colorWhite"
+                android:hint="@string/prompt_license"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:background="@color/colorWhite"
+                android:hint="First Name"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/middleName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:background="@color/colorWhite"
+                android:hint="Middle Name"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:background="@color/colorWhite"
+                android:hint="Last Name"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:background="@color/colorWhite"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/plateNumber"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:background="@color/colorWhite"
+                android:hint="Plate Number"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/contactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:background="@color/colorWhite"
+                android:hint="Contact #"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:background="@color/colorWhite"
+                android:hint="Address"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/birthDate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:background="@color/colorWhite"
+                android:hint="Birthdate"
+                android:inputType="date"
+                android:padding="5dp"
+                android:focusable="false"
+                android:onClick="showDatePickerDialog"/>
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:text="Male"
+                    android:textSize="14dp"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:text="Female"
+                    android:textSize="14dp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Register"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:onClick="registerDriver"/>
+
+    </LinearLayout>
+
+</ScrollView>
